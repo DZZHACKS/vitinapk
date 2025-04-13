@@ -8,6 +8,11 @@ import string
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import threading
+from dotenv import load_dotenv
+import os
+
+# Charger les variables d'environnement
+load_dotenv()
 
 # Initialize intents
 intents = discord.Intents.default()
